@@ -25,7 +25,7 @@ drupal:
 civicrm_translation:
 	tar xzfv civicrm-$(CIVICRM_VERSION)-l10n.tar.gz
 	mv civicrm/l10n $(DRUPAL_FOLDER)/sites/all/modules/civicrm
-	rm -rf civicrm
+	rm -rf civicrm civicrm-$(CIVICRM_VERSION)-l10n.tar.gz
 
 civicrm:
 	tar xzfv civicrm-$(CIVICRM_VERSION)-drupal.tar.gz
